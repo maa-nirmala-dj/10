@@ -1,4 +1,4 @@
-<html lang="en">
+html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -2260,7 +2260,7 @@
 </script>
 
 <div class="container" id="homeSection">
-            <style>
+<style>
     /* --- IMPORT PREMIUM LUXURY FONTS --- */
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Outfit:wght@300;400;600;800&display=swap');
 
@@ -2268,15 +2268,16 @@
     #homeSection {
         padding: 0; 
         margin: 0;
-        overflow-x: hidden;
+        width: 100%;
         background-color: #050505; 
     }
 
-    /* 2. The edge-to-edge full-bleed hero card */
+    /* 2. The edge-to-edge full-bleed hero card (PERFECTED FIT) */
     .full-bleed-hero-edge {
         position: relative;
         width: 100vw; 
-        margin-left: calc(-50vw + 50%); 
+        left: 50%;
+        transform: translateX(-50%); /* This perfectly centers it and removes all side gaps */
         
         height: 48vh; 
         min-height: 420px; 
@@ -2347,6 +2348,7 @@
         padding: 0 20px 15px 20px; 
         text-align: center;
         z-index: 3;
+        box-sizing: border-box; /* Ensures padding doesn't push text off-screen */
     }
 
     /* 7. THE 2-SECOND DEEP COLOR TEXT SHINE ANIMATION */
@@ -2416,7 +2418,6 @@
     }
 </style>
 
-<div id="homeSection">
     <div class="full-bleed-hero-edge">
         
         <img src="https://i.postimg.cc/g20XqtDW/IMG_20260303_121446.png" class="hero-img-full" alt="Maa Nirmala DJ">
@@ -2432,10 +2433,7 @@
             
             <p class="hero-premium-address">
                 Tola Beltikri <span>|</span> Kaddhar <span>|</span> Katoria <br> Banka <span>|</span> Bihar
-            </p>
-            
-        </div>
-        
+            </p>        
     </div>
 </div>
                 <button id="installBtn" onclick="installApp()"><i class="fas fa-download"></i> INSTALL MNDs APP</button>
